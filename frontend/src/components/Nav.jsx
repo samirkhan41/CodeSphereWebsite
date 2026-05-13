@@ -1,5 +1,4 @@
-import logo from '../assets/Logo.jpg'
-
+import logo from '../assets/logo.jpg'
 import { FaHome } from "react-icons/fa";
 import { BsFillCollectionFill } from "react-icons/bs";
 import { MdContacts } from "react-icons/md";
