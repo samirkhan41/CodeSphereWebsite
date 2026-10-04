@@ -6,6 +6,8 @@ import About from './pages/About'
 
 import Projects from './pages/Projects'
 import Events from './pages/Events'
+import CareerHub from './pages/CarrerHub'
+
 
 const App = () => {
 
@@ -20,6 +22,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
 
+        <Route path="/career" element={<CareerHub />} />
       </Routes>
       
     </>

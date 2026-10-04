@@ -4,9 +4,10 @@ import { BsFillCollectionFill } from "react-icons/bs";
 import { MdContacts } from "react-icons/md";
 import { SlCalender } from "react-icons/sl";
 import { useNavigate } from 'react-router-dom';
+import { PiStudent } from "react-icons/pi";
 
 const Nav = () => {
-const navigate =useNavigate()
+  const navigate = useNavigate()
   return (
     <>
       {/* NAVBAR */}
@@ -42,11 +43,10 @@ const navigate =useNavigate()
         >
 
           <p
-          onClick={()=>
-          {
-            navigate("/")
-          }
-          }
+            onClick={() => {
+              navigate("/")
+            }
+            }
             className='text-gray-400 hover:text-white
             transition-all duration-300
             hover:-translate-y-1
@@ -56,11 +56,10 @@ const navigate =useNavigate()
           </p>
 
           <p
-          onClick={()=>
-          {
-            navigate("/projects")
-          }
-          }
+            onClick={() => {
+              navigate("/projects")
+            }
+            }
             className='text-gray-400 hover:text-white
             transition-all duration-300
             hover:-translate-y-1
@@ -70,11 +69,10 @@ const navigate =useNavigate()
           </p>
 
           <p
-          onClick={()=>
-          {
-            navigate("/about")
-          }
-          }
+            onClick={() => {
+              navigate("/about")
+            }
+            }
             className='text-gray-400 hover:text-white
             transition-all duration-300
             hover:-translate-y-1
@@ -84,17 +82,28 @@ const navigate =useNavigate()
           </p>
 
           <p
-          onClick={()=>
-          {
-            navigate("/events")
-          }
-          }
+            onClick={() => {
+              navigate("/events")
+            }
+            }
             className='text-gray-400 hover:text-white
             transition-all duration-300
             hover:-translate-y-1
             cursor-pointer'
           >
             EVENTS
+          </p>
+          <p
+            onClick={() => {
+              navigate("/career")
+            }
+            }
+            className='text-gray-400 hover:text-white
+            transition-all duration-300
+            hover:-translate-y-1
+            cursor-pointer'
+          >
+            CAREER-HUB
           </p>
 
         </div>
@@ -114,11 +123,10 @@ const navigate =useNavigate()
       >
 
         <button
-        onClick={()=>
-        {
-          navigate("/")
-        }
-        }
+          onClick={() => {
+            navigate("/")
+          }
+          }
           className='flex flex-col items-center
           text-gray-400 hover:text-white
           text-[11px] sm:text-xs
@@ -132,11 +140,10 @@ const navigate =useNavigate()
         </button>
 
         <button
-        onClick={()=>
-        {
-          navigate("/projects")
-        }
-        }
+          onClick={() => {
+            navigate("/projects")
+          }
+          }
           className='flex flex-col items-center
           text-gray-400 hover:text-white
           text-[11px] sm:text-xs
@@ -150,11 +157,10 @@ const navigate =useNavigate()
         </button>
 
         <button
-        onClick={()=>
-        {
-          navigate("/about")
-        }
-        }
+          onClick={() => {
+            navigate("/about")
+          }
+          }
           className='flex flex-col items-center
           text-gray-400 hover:text-white
           text-[11px] sm:text-xs
@@ -168,11 +174,10 @@ const navigate =useNavigate()
         </button>
 
         <button
-        onClick={()=>
-        {
-          navigate("/events")
-        }
-        }
+          onClick={() => {
+            navigate("/events")
+          }
+          }
           className='flex flex-col items-center
           text-gray-400 hover:text-white
           text-[11px] sm:text-xs
@@ -180,7 +185,24 @@ const navigate =useNavigate()
           hover:-translate-y-1'
         >
 
-          <SlCalender  className='text-lg mb-1' />
+          <SlCalender className='text-lg mb-1' />
+          Events
+
+        </button>
+
+        <button
+          onClick={() => {
+            navigate("/career")
+          }
+          }
+          className='flex flex-col items-center
+          text-gray-400 hover:text-white
+          text-[11px] sm:text-xs
+          transition-all duration-300
+          hover:-translate-y-1'
+        >
+
+          <PiStudent  className='text-lg mb-1' />
           Events
 
         </button>
