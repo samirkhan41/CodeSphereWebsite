@@ -203,7 +203,7 @@ const Nav = () => {
         >
 
           <PiStudent  className='text-lg mb-1' />
-          Events
+          CAREER
 
         </button>
 
